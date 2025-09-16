@@ -1,0 +1,521 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+   background:linear-gradient(135deg, #b3e0ff, #00bfff); 
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1d4ed8;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  padding: 6px 10px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover{
+color:#333;
+background:#F5F5DC;
+border-radius:4px;
+}
+
+
+.nav-links li a.active {
+  color: #555;
+  background: none;
+
+}
+
+
+
+/* Image Box Section */
+.image-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.image-container .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity:0.2;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container .overlay {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  transform: translateY(-50%);
+  text-align: left;
+  color: #000;
+  background: rgba(0, 0, 0,0);
+  padding: 20px;
+  width: 50%;
+  border-radius: 10px;
+  opacity:0;
+  animation: fadeInText 1s forwards 0.5s;
+}
+
+.image-container .overlay h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.scroll-btn {
+  font-size: 7rem;
+  background-color: transparent;
+  color: #000;
+  padding: 30px 30px;
+  border: 2px solid #000;
+  border-radius: 90%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.scroll-btn:hover {
+  transform: translateY(-5px);
+}
+
+/* Content Section */
+.content-section {
+  padding: 50px;
+  background:linear-gradient(135deg, #dbeafe, #f0f9ff);
+  text-align: center;
+}
+
+/* Add Image next to the text */
+.content-with-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.content-with-image p {
+  flex: 1;
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  text-align: left; /* لضمان أن النص في اليسار */
+}
+
+/* الصوره حقت الامانه  */
+.rela-image {
+  width: 650px; /* حجم الصورة المناسب */
+  height: 550px; /* عرض وارتفاع الصورة تكون مربعة */
+  object-fit: cover; /* لضمان الحفاظ على تناسب الصورة */
+  border-radius: 10px; /* حواف دائرية للصورة */
+}
+
+.info-box h2 {
+  font-size: 2.5rem; /* تغيير حجم النص */
+  color: #000; /* اللون الأسود للنص */
+  margin-bottom: 20px; /* إضافة مسافة أسفل العنوان */
+  text-align: left;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInText {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInSection {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Scroll to Content */
+@keyframes scrollToContent {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Vision and Mission Section */
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Values Section */
+.values-section {
+  padding: 50px 0;
+  background:linear-gradient(135deg, #dbeafe, #f0f9ff);
+
+  text-align: center;
+}
+
+/* Container for the values */
+.values-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* مسافة بين الأعمدة */
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: nowrap; /* ضمان بقاء الأعمدة في صف واحد */
+}
+
+/* Style for each box (Value, Vision, Mission) */
+.value {
+ background-color: #fff;
+
+
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 32%; /* عرض الأعمدة ليكونوا بجانب بعض */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* إضافة مسافة أسفل الأعمدة */
+}
+
+/* Style for the big section (Service Workforce) */
+.value.big {
+  width: 100%; /* تأكيد أن العمود الكبير يحتل العرض الكامل */
+  text-align: left;
+}
+
+/* Title and Description Styles */
+.value .eyebrow {
+  color: #7bb342;
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.value .title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #0f1720;
+  line-height: 1.05;
+  margin-bottom: 16px;
+}
+
+.value .desc {
+  font-size: 15px;
+  color: #6b6b6b;
+  max-width: 520px;
+}
+
+/* Small Section Styles */
+.small-title {
+  font-size: 18px;
+  color: #16321e;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.desc.small {
+  color: #000;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Icon styles */
+.icon {
+  margin: 10px auto;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover effect on value sections */
+.values-grid .value {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.values-grid .value:hover {
+  transform: translateY(-6px);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .values-grid {
+    flex-direction: column; /* ترتيب الأعمدة بشكل عمودي في الشاشات الصغيرة */
+    text-align: center;
+  }
+
+  .value.big {
+    width: 100%; /* العمود الكبير يحتل العرض الكامل */
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .small-title {
+    font-size: 16px;
+  }
+
+  .desc {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+/* Simple Services Section */
+
+
+/* Simple Services Section */
+.simple-services-section {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #dbeafe, #f0f9ff);
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 2s forwards; /* Fade-in effect for the whole section */
+  display: flex;
+  flex-direction: column; /* جعل النص في الأعلى والمربعات أسفله */
+  align-items: center;
+}
+
+.simple-services-title {
+  font-size: 2rem;
+  color: #28a745; /* تغيير اللون إلى الأسود */
+  margin-bottom: 20px;
+  text-align: center; /* تأكيد أن النص سيكون في المنتصف */
+}
+
+.simple-services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%; /* تأكد أن المربعات تأخذ العرض الكامل */
+}
+
+/* Service Items */
+.simple-service-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%; /* عرض المربعات ليظهر 3 في صف */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.simple-service-item:hover {
+  transform: translateY(-10px); /* Hover effect */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.simple-service-item h4 {
+  font-size: 1.5rem;
+  color: #28a745; /* تغيير اللون إلى الأسود */
+  margin-bottom: 10px;
+}
+
+.simple-service-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Fade-in Effect for Each Service Item */
+.simple-service-item.fade-in-up {
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Fade-in Animation for Title */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Scroll-based Animation for Title */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  animation-delay: 0.5s; /* Delay the animation */
+}
+
+/* Media Query for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .simple-services-section {
+    flex-direction: column; /* Stack the content vertically on mobile */
+    text-align: center;
+  }
+
+  .simple-services-title {
+    text-align: center; /* Center the title text on mobile */
+    margin-bottom: 20px;
+  }
+
+  .simple-services-list {
+    flex-direction: column; /* Stack service items vertically on mobile */
+  }
+
+  .simple-service-item {
+    width: 100%; /* Make each item take full width on smaller screens */
+  }
+}
+
+/* Footer */
+
+.footer {
+    background: linear-gradient(135deg, #87CEFA, #FFFFFF); /* تدرج السماوي الفاتح إلى الأبيض */
+    color: #000; /* النص باللون الأسود */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    width: 18%;
+    padding: 10px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #000; /* تأكيد أن العنوان سيكون باللون الأسود */
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #000; /* تغيير النص إلى اللون الأسود */
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: #444; /* تغيير اللون عند التمرير */
+}
+
+.follow-us-container {
+    text-align: center; /* توسيط العنصر */
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column; /* تغيير الاتجاه ليكون عمودي */
+    align-items: center; /* محاذاة الأيقونات في المنتصف */
+}
+
+.social-icons a {
+    margin-bottom: 10px; /* إضافة مسافة بين الأيقونات */
+    font-size: 24px; /* تكبير الأيقونات */
+    color: #000; /* تغيير الأيقونات إلى اللون الأسود */
+}
+
+.social-icons a:hover {
+    color: #444; /* تغيير اللون عند التمرير */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #000; /* تغيير الروابط إلى اللون الأسود */
+    margin: 0 15px;
+}
+
+.footer-links a:hover {
+    color: #444; /* تغيير اللون عند التمرير */
+}
+
+
+
+/* Back Button */
+.back-btn {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #87CEFA, #00BFFF); /* تدرج السماوي */
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 6px 20px rgba(77, 166, 255, 0.25);
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: linear-gradient(135deg, #00BFFF, #87CEFA); /* تدرج السماوي عند التمرير */
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(51, 153, 255, 0.3);
+}

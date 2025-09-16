@@ -1,0 +1,279 @@
+/* Reset */
+* { margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family:'Cairo', sans-serif; transition:0.3s;
+ }
+
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+   background: linear-gradient(135deg, #b3e0ff, #00bfff);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1d4ed8;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  padding: 6px 10px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover{
+color:#333;
+background:#F5F5DC;
+border-radius:4px;
+}
+
+
+.nav-links li a.active {
+  color: #555;
+  background: none;
+
+}
+
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 150px 20px 60px 20px;
+  background: linear-gradient(135deg, #cce7ff, #e6f2ff);
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  color: #2b6cb0;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero img {
+  width: 300px;
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+/* Tips & Exercises Sections */
+.tips-section, .exercises-section, .resources-section, .quote-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.tips-section h2, .exercises-section h2, .resources-section h2 {
+  font-size: 2rem;
+  color: #2b6cb0;
+  margin-bottom: 30px;
+}
+
+.tips-grid, .exercises-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.tip-card, .exercise-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  width: 220px;
+  font-weight: 500;
+  color: #2b6cb0;
+  transition: all 0.3s ease;
+}
+
+.exercise-card h3 {
+  margin-bottom: 10px;
+}
+
+/* Resources */
+.resources-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resources-section ul li {
+  margin: 10px 0;
+}
+
+.resources-section ul li a {
+  text-decoration: none;
+  color: #2b6cb0;
+  font-weight: 500;
+}
+
+.resources-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Quote Section */
+.quote-section {
+  background-color: #d0e8ff;
+  padding: 40px 20px;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #2b6cb0;
+  border-radius: 15px;
+  margin: 40px;
+}
+
+/* Fade-in Animation for Sections */
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+/* Footer */
+
+
+
+.footer {
+    background: linear-gradient(135deg, #87CEFA, #FFFFFF); /* تدرج السماوي الفاتح إلى الأبيض */
+    color: #000; /* النص باللون الأسود */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    width: 18%;
+    padding: 10px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #000; /* تأكيد أن العنوان سيكون باللون الأسود */
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #000; /* تغيير النص إلى اللون الأسود */
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: #444; /* تغيير اللون عند التمرير */
+}
+
+.follow-us-container {
+    text-align: center; /* توسيط العنصر */
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column; /* تغيير الاتجاه ليكون عمودي */
+    align-items: center; /* محاذاة الأيقونات في المنتصف */
+}
+
+.social-icons a {
+    margin-bottom: 10px; /* إضافة مسافة بين الأيقونات */
+    font-size: 24px; /* تكبير الأيقونات */
+    color: #000; /* تغيير الأيقونات إلى اللون الأسود */
+}
+
+.social-icons a:hover {
+    color: #444; /* تغيير اللون عند التمرير */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #000; /* تغيير الروابط إلى اللون الأسود */
+    margin: 0 15px;
+}
+
+.footer-links a:hover {
+    color: #444; /* تغيير اللون عند التمرير */
+}
+
+
+
+/* Back Button */
+.back-btn {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #87CEFA, #00BFFF); /* تدرج السماوي */
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 6px 20px rgba(77, 166, 255, 0.25);
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: linear-gradient(135deg, #00BFFF, #87CEFA); /* تدرج السماوي عند التمرير */
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(51, 153, 255, 0.3);
+}

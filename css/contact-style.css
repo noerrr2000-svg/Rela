@@ -1,0 +1,284 @@
+/* Reset */
+* { margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family:'Cairo', sans-serif; transition:0.3s;
+ }
+
+/* Body & Background */
+body {
+  background:linear-gradient(135deg, #dbeafe, #f0f9ff);
+  color: #1e3a8a;
+  overflow-x: hidden;
+}
+
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+   background: linear-gradient(135deg, #b3e0ff, #00bfff);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1d4ed8;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  padding: 6px 10px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover{
+color:#333;
+background:#F5F5DC;
+border-radius:4px;
+}
+
+
+.nav-links li a.active {
+  color: #555;
+  background: none;
+
+}
+
+
+/* Hero Section */
+.hero { 
+text-align:center;
+ padding:160px 20px 60px 20px;
+ }
+
+.hero h1 {
+ font-size:3rem;
+ color:#1d4ed8;
+ margin-bottom:15px;
+ }
+
+.hero p { 
+font-size:1.2rem;
+ color:#1e40af;
+ }
+
+/* Contact Info */
+.contact-info {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+  gap:25px;
+  max-width:1000px;
+  margin:40px auto;
+  padding:0 20px;
+}
+
+.card {
+  background:#fff;
+ padding:25px;
+ border-radius:20px;
+  box-shadow:0 10px 25px rgba(29,78,216,0.15);
+  transition: transform 0.4s;
+ box-shadow 0.4s;
+text-align:center;
+}
+
+.card:hover {
+  transform:translateY(-12px)
+ rotateZ(-1deg);
+  box-shadow:0 15px 35px rgba(29,78,216,0.3);
+}
+
+.card h2 { 
+color:#1d4ed8;
+ margin-bottom:10px;
+ }
+
+.card a {
+ color:#1d4ed8;
+ text-decoration:none;
+ font-weight:600;
+ }
+.card a:hover{
+ text-decoration:underline; 
+}
+.card img { max-width:100%; border-radius:15px; margin-top:10px; }
+
+
+
+/* Animations */
+.fade-in {
+ opacity:0;
+ animation:fadeIn 1s forwards;
+ }
+.fade-up {
+ opacity:0;
+ transform:translateY(20px);
+ animation:fadeUp 1s forwards;
+ }
+
+
+.delay-1 { 
+animation-delay:0.4s;
+ }
+
+
+.delay-2 {
+animation-delay:0.8s;
+ }
+
+
+.delay-3 {
+ animation-delay:1.2s;
+ }
+
+.delay-4 {
+ animation-delay:1.6s;
+ }
+
+
+@keyframes fadeIn {to { opacity:1; } }
+@keyframes fadeUp { to { opacity:1; transform:translateY(0); } }
+
+@media screen and (max-width:768px){
+  .contact-info {
+ grid-template-columns:1fr;
+ padding:0 10px;
+ }
+}
+
+
+
+
+
+
+
+/* Footer */
+
+.footer {
+    background: linear-gradient(135deg, #87CEFA, #FFFFFF); /* تدرج السماوي الفاتح إلى الأبيض */
+    color: #000; /* النص باللون الأسود */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    width: 18%;
+    padding: 10px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #000; /* تأكيد أن العنوان سيكون باللون الأسود */
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #000; /* تغيير النص إلى اللون الأسود */
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: #444; /* تغيير اللون عند التمرير */
+}
+
+.follow-us-container {
+    text-align: center; /* توسيط العنصر */
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column; /* تغيير الاتجاه ليكون عمودي */
+    align-items: center; /* محاذاة الأيقونات في المنتصف */
+}
+
+.social-icons a {
+    margin-bottom: 10px; /* إضافة مسافة بين الأيقونات */
+    font-size: 24px; /* تكبير الأيقونات */
+    color: #000; /* تغيير الأيقونات إلى اللون الأسود */
+}
+
+.social-icons a:hover {
+    color: #444; /* تغيير اللون عند التمرير */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #000; /* تغيير الروابط إلى اللون الأسود */
+    margin: 0 15px;
+}
+
+.footer-links a:hover {
+    color: #444; /* تغيير اللون عند التمرير */
+}
+
+
+
+/* Back Button */
+.back-btn {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #87CEFA, #00BFFF); /* تدرج السماوي */
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 6px 20px rgba(77, 166, 255, 0.25);
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: linear-gradient(135deg, #00BFFF, #87CEFA); /* تدرج السماوي عند التمرير */
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(51, 153, 255, 0.3);
+}

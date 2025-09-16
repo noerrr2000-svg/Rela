@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Profile - Hail Municipality</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/profile-style.css">
+</head>
+<body>
+    <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Rila</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="who.html">Who we are</a></li>
+      <li><a href="activity.html">Activity</a></li>
+      <li><a href="mental.html">Mental</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </header>
+
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="profile-container">
+            <div class="profile-card">
+                <div class="profile-header">
+                    <label for="profile-image">
+                        <img src="img/default-profile.jpg" alt="Profile Picture" class="profile-image" id="profile-picture">
+                    </label>
+                    <input type="file" id="profile-image" accept="image/*" style="display:none" onchange="updateProfilePicture(event)">
+                    <h2 class="profile-name">Mohammad Bin Abdullah</h2>
+                    <p class="profile-position">Urban Planning Engineer</p>
+                </div>
+
+                <!-- Profile Information (Single Section) -->
+                <div class="profile-info">
+                    <div class="info-item">
+                        <h3>Personal Information</h3>
+                        <p><strong>Name:</strong> Mohammad Bin Abdullah</p>
+                        <p><strong>Email:</strong> mohammed@example.com</p>
+                        <p><strong>Phone:</strong> +966123456789</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Work Experience</h3>
+                        <p><strong>Role:</strong> Urban Planning Engineer</p>
+                        <p><strong>Organization:</strong> Hail Municipality</p>
+                        <p><strong>Years of Experience:</strong> 5 Years</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Skills</h3>
+                        <ul>
+                            <li>Urban Planning</li>
+                            <li>Project Management</li>
+                            <li>Team Leadership</li>
+                            <li>GIS (Geographical Information Systems)</li>
+                        </ul>
+                    </div>
+                    <div class="info-item">
+                        <h3>Certifications</h3>
+                        <ul>
+                            <li>Certified Urban Planner</li>
+                            <li>Project Management Professional (PMP)</li>
+                            <li>GIS Specialist Certificate</li>
+                        </ul>
+                    </div>
+                    <div class="info-item">
+                        <h3>Current Projects</h3>
+                        <p>Development of Hail Corniche</p>
+                        <p>Expansion of Road Networks in Hail</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Upcoming Tasks</h3>
+                        <ul>
+                            <li>Prepare design for the new parks in Hail</li>
+                            <li>Coordinate with contractors for road repair projects</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Edit Button -->
+                <button class="edit-btn" onclick="showEditForm()">Edit Profile</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Edit Profile Form (Multiple Sections) -->
+    <div class="edit-form" id="edit-form">
+        <h3>Edit Profile</h3>
+        <form>
+            <label for="edit-name">Name:</label>
+            <input type="text" id="edit-name" value="Mohammad Bin Abdullah">
+            
+            <label for="edit-email">Email:</label>
+            <input type="email" id="edit-email" value="mohammed@example.com">
+            
+            <label for="edit-phone">Phone:</label>
+            <input type="text" id="edit-phone" value="+966123456789">
+
+            <label for="edit-department">Department:</label>
+            <select id="edit-department">
+                <option value="Engineering">Urban Planning</option>
+                <option value="HR">Human Resources</option>
+                <option value="Finance">Finance</option>
+            </select>
+
+            <label for="edit-experience">Work Experience:</label>
+            <textarea id="edit-experience">Urban Planning Engineer at Hail Municipality, 5 years experience</textarea>
+
+            <label for="edit-skills">Skills:</label>
+            <textarea id="edit-skills">Urban Planning, Project Management, GIS, Team Leadership</textarea>
+
+            <label for="edit-certifications">Certifications:</label>
+            <textarea id="edit-certifications">Certified Urban Planner, PMP, GIS Specialist</textarea>
+
+            <label for="edit-projects">Current Projects:</label>
+            <textarea id="edit-projects">Development of Hail Corniche, Road Network Expansion</textarea>
+
+            <label for="edit-tasks">Upcoming Tasks:</label>
+            <textarea id="edit-tasks">Design new parks, Coordinate road repair projects</textarea>
+
+            <div class="form-buttons">
+                <button type="button" class="save-btn" onclick="saveChanges()">Save Changes</button>
+                <button type="button" class="cancel-btn" onclick="cancelEdit()">Cancel</button>
+            </div>
+        </form>
+    </div>
+ <!-- Footer -->
+ <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Shop</h4>
+            <ul>
+                <li><a href="#">RazerStores</a></li>
+                <li><a href="#">RazerCafe</a></li>
+                <li><a href="#">Store Locator</a></li>
+                <li><a href="#">Purchase Programs</a></li>
+                <li><a href="#">Bulk Order Program</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Only at Razer</a></li>
+                <li><a href="#">Razer Silver Rewards</a></li>
+                <li><a href="#">Affiliate</a></li>
+                <li><a href="#">Newsletter</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Chroma RGB</a></li>
+                <li><a href="#">Concepts</a></li>
+                <li><a href="#">Esports</a></li>
+                <li><a href="#">Collabs</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+                <li><a href="#">Get Help</a></li>
+                <li><a href="#">Registration & Warranty</a></li>
+                <li><a href="#">RazerStore Support</a></li>
+                <li><a href="#">RazerCare</a></li>
+                <li><a href="#">Manage Razer ID</a></li>
+                <li><a href="#">Support Videos</a></li>
+                <li><a href="#">Recycling Program</a></li>
+                <li><a href="#">Accessibility Statement</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Newsroom</a></li>
+                <li><a href="#">zVentures</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <div class="follow-us-container">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>FOR GAMERS. BY GAMERS.™</p>
+        <div class="footer-links">
+            <a href="#">United States | Change Location</a>
+            <a href="#">Legal Terms</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Settings</a>
+        </div>
+
+
+    </div>
+<!-- Back Button -->
+  <button class="back-btn" onclick="window.history.back()">⟵ Back</button>
+
+</footer>
+
+
+
+
+     <script src="js/profile-script.js"></script>
+</body>
+</html>

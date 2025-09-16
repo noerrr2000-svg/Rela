@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Activities</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <link rel="stylesheet" href="css/activity-style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Rila</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="who.html">Who we are</a></li>
+      <li><a href="activity.html" class="active">Activity</a></li>
+            <li><a href="mental.html">Mental</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <h1 class="page-title">Rela Activities</h1>
+    <section class="grid">
+
+      <!-- 10 activity cards -->
+      <article class="card" data-title="Time management training" data-place="Meeting room" data-day="Sunday" data-time="11:00 PM"
+        style="background-image:url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400');">
+        <div class="card-content">
+          <div class="card-title">Time management training</div>
+          <div class="meta">
+            <div class="chip">📍 Meeting room</div>
+            <div class="chip">📅 Sunday — 11:00 AM</div>
+          </div>
+          <button class="register-btn" onclick="openRegister(event,this)">Register</button>
+        </div>
+        <div class="circle-arrow">→</div>
+      </article>
+
+      <article class="card" data-title="Leadership Training" data-place="Conference Room 2" data-day="Monday" data-time="10:00 AM"
+        style="background-image:url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1400');">
+        <div class="card-content">
+          <div class="card-title">Leadership Training</div>
+          <div class="meta">
+            <div class="chip">📍 Conference Room 2</div>
+            <div class="chip">📅 Monday — 10:00 AM</div>
+          </div>
+          <button class="register-btn" onclick="openRegister(event,this)">Register</button>
+        </div>
+        <div class="circle-arrow">→</div>
+      </article>
+
+      <article class="card" data-title="Stress Management" data-place="Meeting Room" data-day="Monday" data-time="2:30 PM"
+        style="background-image:url('https://www.creativefabrica.com/wp-content/uploads/2020/09/11/Stress-Management-Concept-of-Businessman-Graphics-5437659-2-580x387.png');">
+        <div class="card-content">
+          <div class="card-title">Stress Management</div>
+          <div class="meta">
+            <div class="chip">📍 Meeting Room</div>
+            <div class="chip">📅 Monday — 2:30 PM</div>
+          </div>
+          <button class="register-btn" onclick="openRegister(event,this)">Register</button>
+        </div>
+        <div class="circle-arrow">→</div>
+      </article>
+
+      <article class="card" data-title="Building professional relationships" data-place="Lounge" data-day="Sunday" data-time="9:00 AM"
+        style="background-image:url('https://media.licdn.com/dms/image/v2/D4D12AQE5xiYCKYQP5w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1681989642702?e=2147483647&v=beta&t=MjMtrs-vmxzlQsKk5PzFDxiEFu9xZVzrryfd7Sf59rY');">
+        <div class="card-content">
+          <div class="card-title">Building professional relationships</div>
+          <div class="meta">
+            <div class="chip">📍 Lounge</div>
+            <div class="chip">📅 Sunday — 9:00 AM</div>
+          </div>
+          <button class="register-btn" onclick="openRegister(event,this)">Register</button>
+        </div>
+        <div class="circle-arrow">→</div>
+      </article>
+
+      <article class="card" data-title="AI & Machine Learning" data-place="Trining hall" data-day="Wednesday" data-time="1:00 PM"
+        style="background-image:url('https://bunny-wp-pullzone-uk3u1ml6bj.b-cdn.net/wp-content/uploads/2025/07/machine-learning-scaled.png');">
+        <div class="card-content">
+          <div class="card-title">AI & Machine Learning</div>
+          <div class="meta">
+            <div class="chip">📍 Trining hall </div>
+            <div class="chip">📅 Wednesday — 1:00 PM</div>
+          </div>
+          <button class="register-btn" onclick="openRegister(event,this)">Register</button>
+        </div>
+        <div class="circle-arrow">→</div>
+      </article>
+
+      <article class="card" data-title="Creative thinking and problem solving" data-place="Meeting Room 1" data-day="Thursday" data-time="11:30 AM"
+        style="background-image:url('https://miro.medium.com/0*jtbtZffxOTJZ0BQr.jpg');">
+        <div class="card-content">
+          <div class="card-title">Creative thinking and problem solving</div>
+          <div class="meta">
+            <div class="chip">📍 Meeting Room 1</div>
+            <div class="chip">📅 Thursday — 11:30 AM</div>
+          </div>
+          <button class="register-btn" onclick="openRegister(event,this)">Register</button>
+        </div>
+        <div class="circle-arrow">→</div>
+      </article>
+
+      <article class="card" data-title="Business Strategy Talk" data-place="Conference Room  1" data-day="Tusday" data-time="2:00 PM"
+        style="background-image:url('https://cdn.arabsstock.com/uploads/images/26912/meeting-of-arab-saudi-gulf-thumbnail-26912.webp');">
+        <div class="card-content">
+          <div class="card-title">Business Strategy Talk</div>
+          <div class="meta">
+            <div class="chip">📍 Conference Room  1</div>
+            <div class="chip">📅 Tuesday — 2:00 PM</div>
+          </div>
+          <button class="register-btn" onclick="openRegister(event,this)">Register</button>
+        </div>
+        <div class="circle-arrow">→</div>
+      </article>
+
+      <article class="card" data-title="Positivity at work" data-place="Meeting Room" data-day="Wednesday" data-time="8:00 AM"
+        style="background-image:url('https://www.mueen.com.sa/uploads/service-detail/saudi_esnad.webp');">
+
+        <div class="card-content">
+          <div class="card-title">Positivity at work</div>
+          <div class="meta">
+            <div class="chip">📍 Meeting room</div>
+            <div class="chip">📅 Wednesday — 8:00 AM</div>
+          </div>
+          <button class="register-btn" onclick="openRegister(event,this)">Register</button>
+        </div>
+        <div class="circle-arrow">→</div>
+      </article>
+
+      <article class="card" data-title="Visit the elderly home" data-place=" Orphanage or elderly care home in Hail" data-day="Wednesday" data-time="4:00 PM"
+        style="background-image:url('https://rahahome.com/wp-content/uploads/2022/11/arabsstock_P32432_large-min-1024x681.jpg');">
+        <div class="card-content">
+          <div class="card-title">Visit the elderly home</div>
+          <div class="meta">
+            <div class="chip">📍 Orphanage or elderly care home in Hail</div>
+            <div class="chip">📅 Sunday — 4:00 PM</div>
+          </div>
+          <button class="register-btn" onclick="openRegister(event,this)">Register</button>
+        </div>
+        <div class="circle-arrow">→</div>
+      </article>
+
+      <article class="card" data-title="Distributing food to the needy" data-place="Prince Saud bin Abdul Mohsen Road, Hail, Saudi Arabia 55431" data-day="Friday" data-time="4:00 PM"
+        style="background-image:url('https://media.istockphoto.com/id/1060352206/photo/donate-food-to-hungry-people-concept-of-poverty-and-hunger.jpg?s=612x612&w=0&k=20&c=BB37IPajPeKo8fsJ3m7z2TOUmCbD0nnJo79ZXBg89sM=');">
+        <div class="card-content">
+          <div class="card-title">Distributing food to the needy</div>
+          <div class="meta">
+            <div class="chip">📍 Prince Saud bin Abdul Mohsen Road, Hail, Saudi Arabia 55431</div>
+            <div class="chip">📅 Friday — 4:00 PM</div>
+          </div>
+          <button class="register-btn" onclick="openRegister(event,this)">Register</button>
+        </div>
+        <div class="circle-arrow">→</div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" id="modalBackdrop" onclick="closeModal(event)">
+    <div class="modal" onclick="event.stopPropagation()">
+      <h3 id="modalTitle">Register for Activity</h3>
+
+      <div class="row">
+        <label>Activity</label>
+        <input id="actTitle" readonly />
+      </div>
+
+      <div class="row">
+        <label>Place</label>
+        <input id="actPlace" readonly />
+      </div>
+
+      <div class="row">
+        <label>Date/Time</label>
+        <input id="actWhen" readonly />
+      </div>
+
+      <div class="row">
+        <label>Name</label>
+        <input id="userName" placeholder="Your full name" />
+      </div>
+
+      <div class="row">
+        <label>Phone</label>
+        <input id="userPhone" placeholder="05xxxxxxxx" />
+      </div>
+
+<div class="row">
+  <label for="userId">Employee ID</label>
+  <input id="userId" placeholder="Enter employee ID" />
+</div>
+
+
+      <div class="modal-actions">
+        <button class="btn ghost" onclick="closeModal()">Cancel</button>
+        <button class="btn primary" onclick="submitRegistration()">Confirm</button>
+      </div>
+    </div>
+  </div>
+
+
+
+ 
+
+ 
+
+<!-- Footer -->
+  
+ <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Shop</h4>
+            <ul>
+                <li><a href="#">RazerStores</a></li>
+                <li><a href="#">RazerCafe</a></li>
+                <li><a href="#">Store Locator</a></li>
+                <li><a href="#">Purchase Programs</a></li>
+                <li><a href="#">Bulk Order Program</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Only at Razer</a></li>
+                <li><a href="#">Razer Silver Rewards</a></li>
+                <li><a href="#">Affiliate</a></li>
+                <li><a href="#">Newsletter</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Chroma RGB</a></li>
+                <li><a href="#">Concepts</a></li>
+                <li><a href="#">Esports</a></li>
+                <li><a href="#">Collabs</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+                <li><a href="#">Get Help</a></li>
+                <li><a href="#">Registration & Warranty</a></li>
+                <li><a href="#">RazerStore Support</a></li>
+                <li><a href="#">RazerCare</a></li>
+                <li><a href="#">Manage Razer ID</a></li>
+                <li><a href="#">Support Videos</a></li>
+                <li><a href="#">Recycling Program</a></li>
+                <li><a href="#">Accessibility Statement</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Newsroom</a></li>
+                <li><a href="#">zVentures</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <div class="follow-us-container">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>FOR GAMERS. BY GAMERS.™</p>
+        <div class="footer-links">
+            <a href="#">United States | Change Location</a>
+            <a href="#">Legal Terms</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Settings</a>
+        </div>
+
+
+    </div>
+<!-- Back Button -->
+  <button class="back-btn" onclick="window.history.back()">⟵ Back</button>
+
+</footer>
+
+
+
+  <script src="js/activity-script.js"></script>
+</body>
+</html>
