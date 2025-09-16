@@ -172,9 +172,10 @@ animation-delay:0.8s;
 
 /* Footer */
 
+/* Footer Style */
 .footer {
-    background: linear-gradient(135deg, #87CEFA, #FFFFFF); /* تدرج السماوي الفاتح إلى الأبيض */
-    color: #000; /* النص باللون الأسود */
+    background: linear-gradient(135deg, #87CEFA, #FFFFFF); /* Light sky blue to white gradient */
+    color: #000; /* Black text */
     padding: 40px 20px;
     font-family: Arial, sans-serif;
     text-align: left;
@@ -195,7 +196,7 @@ animation-delay:0.8s;
     font-size: 18px;
     margin-bottom: 15px;
     font-weight: bold;
-    color: #000; /* تأكيد أن العنوان سيكون باللون الأسود */
+    color: #000; /* Ensuring the title is in black */
 }
 
 .footer-section ul {
@@ -209,32 +210,33 @@ animation-delay:0.8s;
 
 .footer-section ul li a {
     text-decoration: none;
-    color: #000; /* تغيير النص إلى اللون الأسود */
+    color: #000; /* Links in black */
     font-size: 14px;
 }
 
 .footer-section ul li a:hover {
-    color: #444; /* تغيير اللون عند التمرير */
+    color: #444; /* Hover color */
 }
 
 .follow-us-container {
-    text-align: center; /* توسيط العنصر */
+    text-align: center; /* Center the element */
 }
 
 .social-icons {
     display: flex;
-    flex-direction: column; /* تغيير الاتجاه ليكون عمودي */
-    align-items: center; /* محاذاة الأيقونات في المنتصف */
+    flex-direction: column; /* Vertical arrangement of icons */
+    align-items: center; /* Center the icons */
 }
 
 .social-icons a {
-    margin-bottom: 10px; /* إضافة مسافة بين الأيقونات */
-    font-size: 24px; /* تكبير الأيقونات */
-    color: #000; /* تغيير الأيقونات إلى اللون الأسود */
+    margin-bottom: 10px; /* Space between icons */
+    font-size: 24px; /* Enlarging the icons */
+    color: #000; /* Black color for icons */
+    text-decoration: none;
 }
 
 .social-icons a:hover {
-    color: #444; /* تغيير اللون عند التمرير */
+    color: #444; /* Hover effect on icons */
 }
 
 .footer-bottom {
@@ -249,13 +251,26 @@ animation-delay:0.8s;
 
 .footer-links a {
     text-decoration: none;
-    color: #000; /* تغيير الروابط إلى اللون الأسود */
+    color: #000; /* Black color for links */
     margin: 0 15px;
 }
 
 .footer-links a:hover {
-    color: #444; /* تغيير اللون عند التمرير */
+    color: #444; /* Hover effect for links */
 }
+
+
+
+/* Scroll to Top Button Visibility */
+.footer {
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
 
 
 
